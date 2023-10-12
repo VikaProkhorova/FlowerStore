@@ -6,7 +6,7 @@ import flower.store.filters.SearchFilter;
 
 public class Store {
     List<Item> items;
-    public Store() {
+    public Store(){
         this.items = new ArrayList<>();
     }
     public void addItem(Item item){
