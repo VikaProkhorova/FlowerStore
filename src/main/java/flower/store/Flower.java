@@ -9,28 +9,29 @@ import lombok.ToString;
 
 @Setter
 @Getter @AllArgsConstructor @ToString @NoArgsConstructor
-public class Flower extends Item{
-    public Flower(Flower flower){
+public class Flower extends Item {
+    public Flower(Flower flower) {
         this.flowerType = flower.flowerType;
         this.color = flower.color;
         this.price = flower.price;
         this.sepalLength = flower.sepalLength;
     }
-    private double sepalLength;
+
+    private FlowerType flowerType;
     private FlowerColor color;
     private double price;
-    private FlowerType flowerType;
+    private double sepalLength;
 
-    public String getColor(){
+    public String getColor() {
         return color.toString();
     }
-    public void setPrice(int price){
-        this.price = price;
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
     }
-    public void setType(FlowerType type){
+    public void setType(FlowerType type) {
         this.flowerType = type;
     }
-    public void setColor(FlowerColor color){
-        this.color = color;
+    public void setColor(FlowerColor newColor) {
+        this.color = newColor;
     }
 }
