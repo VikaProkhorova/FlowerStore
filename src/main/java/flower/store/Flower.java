@@ -22,16 +22,16 @@ public class Flower extends Item {
     private double price;
     private double sepalLength;
 
-    public String getColor() {
-        return color.toString();
-    }
-    public void setPrice(double newPrice) {
-        this.price = newPrice;
-    }
     public void setType(FlowerType type) {
         this.flowerType = type;
     }
+    public String getColor() {
+        return color.toString();
+    }
     public void setColor(FlowerColor newColor) {
         this.color = newColor;
+    }
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
     }
 }
